@@ -10,3 +10,4 @@ source /usr/share/cachyos-zsh-config/cachyos-config.zsh
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 alias zapret='sudo bash ~/zapret-discord-youtube-linux/main_script.sh -nointeractive'
+alias ls='ls -a'
