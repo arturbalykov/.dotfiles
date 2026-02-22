@@ -73,6 +73,14 @@ static const unsigned int maxHTab = 200;
 /* useless-gaps */
 static const unsigned int gappx = 3;
 
+/* systray */
+static const int showsystray = 1;
+static const int systrayonleft = 0;
+static const unsigned int systrayspacing = 2;
+static const int systraypinning = 0;
+static const int systraypinningfailfirst = 1;
+
+
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ ControlMask,                  XK_space,  spawn,          {.v = dmenucmd } },
