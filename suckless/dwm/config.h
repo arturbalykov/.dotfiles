@@ -70,6 +70,9 @@ static const unsigned int tabPosX = 1;
 static const unsigned int maxWTab = 600;
 static const unsigned int maxHTab = 200;
 
+/* useless-gaps */
+static const unsigned int gappx = 3;
+
 static const Key keys[] = {
 	/* modifier                     key        function        argument */
 	{ ControlMask,                  XK_space,  spawn,          {.v = dmenucmd } },
