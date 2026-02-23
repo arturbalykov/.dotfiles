@@ -2,7 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-bspc monitor -d 1 2 3 4 5 6 7 8 9 10
+bspc monitor -d 1 2 3 4 5
 
 bspc config window_gap           7
 
@@ -21,21 +21,25 @@ bspc config presel_feedback_color "#6272a4"
 
 bspc config top_padding -6
 bspc config bottom_padding -2
+
 #keyboard
-setxkbmap -layout us,ru -option grp:win_space_toggle
+setxkbmap -layout us,ru -option grp:alt_shift_toggle
 xset r rate 175 40
+
+#rules
+bspc rule -a kitty desktop='^1' follow=on
+bspc rule -a qutebrowser desktop='^2' follow=on
+bspc rule -a vesktop desktop='^3' follow=on
+bspc rule -a sudo bash ~/zapret-discord-youtube-linux/main_script.sh -nointeractive desktop='^10' follow=on
 #autostart
-#killall sxhkd &
+killall sxhkd
 sxhkd &
 
 killall picom
 picom --config $HOME/.config/picom/picom.conf &
 
-killall nitrogen
-nitrogen --restore &
-
-killall dunst
-dunst &
+killall feh
+feh --bg-scale wallpapers/everlasting_summer/остановка-день.jpg &
 
 killall polybar
 polybar &

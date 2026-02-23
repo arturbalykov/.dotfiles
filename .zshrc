@@ -9,9 +9,6 @@ source ~/zsh-conf.zsh
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-alias zapret='sudo bash ~/zapret-discord-youtube-linux/main_script.sh -nointeractive'
+alias zapret='sudo bash ~/zapret-discord-youtube-linux/service.sh'
+alias zapret-stop='sudo bash ~/zapret-discord-youtube-linux/stop_and_clean_nft.sh'
 alias ls='ls -a'
-
-# быстрые команды для управления zapret
-alias zapret-config='$HOME/zapret-configs/install.sh'
-alias zapret-utils='$HOME/zapret-configs/utils-zapret.sh'
