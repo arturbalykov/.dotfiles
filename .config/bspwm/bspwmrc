@@ -23,7 +23,7 @@ bspc config top_padding -6
 bspc config bottom_padding -2
 #keyboard
 setxkbmap -layout us,ru -option grp:win_space_toggle
-
+xset r rate 175 40
 #autostart
 #killall sxhkd &
 sxhkd &
